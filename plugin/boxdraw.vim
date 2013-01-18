@@ -281,11 +281,11 @@ fu! s:MRB(d)
 endf
 
 
-:nmap <buffer> ,b :call <SID>S()<CR>
+nmap <Leader>b :call <SID>S()<CR>
 if has("win32")
   " Under win32 activate boxdrwaing mode upon start.
   " If undesirable, prepend with :nmap ,b
   "
-  :normal ,b
+  " :normal ,b
 else
 en
